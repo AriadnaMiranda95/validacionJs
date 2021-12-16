@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/prueba.css">
+    <script src="../js/prueba.js"></script>
+    <title>Prueba de un formulario</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        
+    
+    <div class="datosPersonales">
+      
+        <form>
+            <h1>Datos personales</h1>
+            <label>Nombre :</label><input type="text" class="nombre">
+            <label>Apellidos :</label> <input type="text" class="apellidos">
+
+            <section>
+                <label>Sexo :</label>
+
+                <label for="hombre">Hombre</label><input type="radio" value="hombre" name="sexo" id="hombre" class="sexo">
+                <label for="mujer">Mujer</label> <input type="radio" value="mujer" name="sexo" id="mujer" class="sexo">
+
+            </section>
+            <label for="correo">Correo electrónico :</label><input type="text" id="correo" class="correo">
+
+        </form>
+        <div class="errores">
+            <p class="error"></p>
+        </div>
+    </div>
+    <div class="informacionAdicional ">
+        <form class="infoForm">
+            <label for="options">¿Cómo llegó hasta aquí?</label>
+            <select name="options" id="options" class="options">
+                <option value="azar">Al azar</option>
+                <option value="url">Le indicaron la URL de la página</option>
+                <option value="enlace">Mediante un enlace desde otra página</option>
+                <option value="buscador" selected="selected">A través de un buscador</option>
+            </select>
+            <label for="info">¿Desearía mas información sobre : ?</label>
+            <p> <label for="audiovisual">Material audiovisual.</label><input type="checkbox" id="audiovisual" name="informacion" class="informacion" value="material audiovisual"></p>
+            <p><label for="electronico">Textos electrónicos.</label><input type="checkbox" id="electronico" name="informacion" class="informacion" value="textos electronicos"></p>
+            <p><label for="texto">Libros de texto.</label> <input type="checkbox" id="texto" name="informacion" class="informacion" value="libros de texto"></p>
+        </form>
+    </div>
+    
+    <div class="informe">
+        <h1>EDITORIAL CICLOS F.P</h1>
+        <select name="infoUsuario" id="infoUsuario" size="4">
+        </select>
+        <p class="datos"></p>
+
+        <div class="botones">
+            <input type="button" value="Visualizar datos" class="visualizarDatos">
+            <input type="button" value="Añadir" class="añadir">
+            <input type="button" value="Eliminar" class="eliminar">
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+
+</html>
